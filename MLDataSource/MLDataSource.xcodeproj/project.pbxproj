@@ -1,0 +1,417 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AAD288CE1A13A68B00106589 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAD288CD1A13A68B00106589 /* Foundation.framework */; };
+		AAD288D01A13A68B00106589 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAD288CF1A13A68B00106589 /* UIKit.framework */; };
+		AAD288D61A13A68B00106589 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AAD288D41A13A68B00106589 /* InfoPlist.strings */; };
+		AAD288D81A13A68C00106589 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD288D71A13A68C00106589 /* main.m */; };
+		AAD288E21A13A68C00106589 /* MLConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD288E11A13A68C00106589 /* MLConstants.m */; };
+		AAD288E61A13A68C00106589 /* MLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD288E51A13A68C00106589 /* MLViewController.m */; };
+		AAD288E91A13A68C00106589 /* MLTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD288E81A13A68C00106589 /* MLTableViewController.m */; };
+		AAD288EC1A13A68C00106589 /* MLCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD288EB1A13A68C00106589 /* MLCollectionViewController.m */; };
+		AAD288EF1A13A68C00106589 /* MLNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD288EE1A13A68C00106589 /* MLNavigationController.m */; };
+		AAD288F31A13A68C00106589 /* MLTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD288F21A13A68C00106589 /* MLTableViewCell.m */; };
+		AAD288F71A13A68C00106589 /* MLCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD288F61A13A68C00106589 /* MLCollectionViewCell.m */; };
+		AAD288FA1A13A68C00106589 /* MLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD288F91A13A68C00106589 /* MLAppDelegate.m */; };
+		AAD289021A13A6AB00106589 /* MLDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD289011A13A6AB00106589 /* MLDataSource.m */; };
+		AAD289051A13A6BF00106589 /* MLPagedDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD289041A13A6BF00106589 /* MLPagedDataSource.m */; };
+		AAD289071A13A73B00106589 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAD289061A13A73B00106589 /* Images.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AAD288CA1A13A68B00106589 /* MLDataSource.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MLDataSource.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAD288CD1A13A68B00106589 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AAD288CF1A13A68B00106589 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		AAD288D31A13A68B00106589 /* MLDataSource-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MLDataSource-Info.plist"; sourceTree = "<group>"; };
+		AAD288D51A13A68B00106589 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AAD288D71A13A68C00106589 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AAD288D91A13A68C00106589 /* MLDataSource-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MLDataSource-Prefix.pch"; sourceTree = "<group>"; };
+		AAD288DF1A13A68C00106589 /* MLDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MLDefines.h; sourceTree = "<group>"; };
+		AAD288E01A13A68C00106589 /* MLConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MLConstants.h; sourceTree = "<group>"; };
+		AAD288E11A13A68C00106589 /* MLConstants.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MLConstants.m; sourceTree = "<group>"; };
+		AAD288E41A13A68C00106589 /* MLViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MLViewController.h; sourceTree = "<group>"; };
+		AAD288E51A13A68C00106589 /* MLViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MLViewController.m; sourceTree = "<group>"; };
+		AAD288E71A13A68C00106589 /* MLTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MLTableViewController.h; sourceTree = "<group>"; };
+		AAD288E81A13A68C00106589 /* MLTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MLTableViewController.m; sourceTree = "<group>"; };
+		AAD288EA1A13A68C00106589 /* MLCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MLCollectionViewController.h; sourceTree = "<group>"; };
+		AAD288EB1A13A68C00106589 /* MLCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MLCollectionViewController.m; sourceTree = "<group>"; };
+		AAD288ED1A13A68C00106589 /* MLNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MLNavigationController.h; sourceTree = "<group>"; };
+		AAD288EE1A13A68C00106589 /* MLNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MLNavigationController.m; sourceTree = "<group>"; };
+		AAD288F11A13A68C00106589 /* MLTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MLTableViewCell.h; sourceTree = "<group>"; };
+		AAD288F21A13A68C00106589 /* MLTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MLTableViewCell.m; sourceTree = "<group>"; };
+		AAD288F51A13A68C00106589 /* MLCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MLCollectionViewCell.h; sourceTree = "<group>"; };
+		AAD288F61A13A68C00106589 /* MLCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MLCollectionViewCell.m; sourceTree = "<group>"; };
+		AAD288F81A13A68C00106589 /* MLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MLAppDelegate.h; sourceTree = "<group>"; };
+		AAD288F91A13A68C00106589 /* MLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MLAppDelegate.m; sourceTree = "<group>"; };
+		AAD289001A13A6AB00106589 /* MLDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLDataSource.h; sourceTree = "<group>"; };
+		AAD289011A13A6AB00106589 /* MLDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLDataSource.m; sourceTree = "<group>"; };
+		AAD289031A13A6BF00106589 /* MLPagedDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLPagedDataSource.h; sourceTree = "<group>"; };
+		AAD289041A13A6BF00106589 /* MLPagedDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLPagedDataSource.m; sourceTree = "<group>"; };
+		AAD289061A13A73B00106589 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AAD288C71A13A68B00106589 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAD288CE1A13A68B00106589 /* Foundation.framework in Frameworks */,
+				AAD288D01A13A68B00106589 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AAD288C11A13A68B00106589 = {
+			isa = PBXGroup;
+			children = (
+				AAD288D11A13A68B00106589 /* MLDataSource */,
+				AAD288CC1A13A68B00106589 /* Frameworks */,
+				AAD288CB1A13A68B00106589 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AAD288CB1A13A68B00106589 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AAD288CA1A13A68B00106589 /* MLDataSource.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AAD288CC1A13A68B00106589 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AAD288CD1A13A68B00106589 /* Foundation.framework */,
+				AAD288CF1A13A68B00106589 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AAD288D11A13A68B00106589 /* MLDataSource */ = {
+			isa = PBXGroup;
+			children = (
+				AAD288DF1A13A68C00106589 /* MLDefines.h */,
+				AAD288E01A13A68C00106589 /* MLConstants.h */,
+				AAD288E11A13A68C00106589 /* MLConstants.m */,
+				AAD288F81A13A68C00106589 /* MLAppDelegate.h */,
+				AAD288F91A13A68C00106589 /* MLAppDelegate.m */,
+				AAD288DE1A13A68C00106589 /* Controllers */,
+				AAD288DD1A13A68C00106589 /* Models */,
+				AAD288DC1A13A68C00106589 /* Views */,
+				AAD288DB1A13A68C00106589 /* Categories */,
+				AAD288DA1A13A68C00106589 /* Resources */,
+				AAD288D21A13A68B00106589 /* Supporting Files */,
+			);
+			path = MLDataSource;
+			sourceTree = "<group>";
+		};
+		AAD288D21A13A68B00106589 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AAD288D31A13A68B00106589 /* MLDataSource-Info.plist */,
+				AAD288D71A13A68C00106589 /* main.m */,
+				AAD288D91A13A68C00106589 /* MLDataSource-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AAD288DA1A13A68C00106589 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AAD289061A13A73B00106589 /* Images.xcassets */,
+				AAD288D41A13A68B00106589 /* InfoPlist.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AAD288DB1A13A68C00106589 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		AAD288DC1A13A68C00106589 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AAD288F01A13A68C00106589 /* UITableView Cells */,
+				AAD288F41A13A68C00106589 /* UICollectionView Cells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AAD288DD1A13A68C00106589 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AAD289001A13A6AB00106589 /* MLDataSource.h */,
+				AAD289011A13A6AB00106589 /* MLDataSource.m */,
+				AAD289031A13A6BF00106589 /* MLPagedDataSource.h */,
+				AAD289041A13A6BF00106589 /* MLPagedDataSource.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AAD288DE1A13A68C00106589 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AAD288E31A13A68C00106589 /* Abstract */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AAD288E31A13A68C00106589 /* Abstract */ = {
+			isa = PBXGroup;
+			children = (
+				AAD288E41A13A68C00106589 /* MLViewController.h */,
+				AAD288E51A13A68C00106589 /* MLViewController.m */,
+				AAD288E71A13A68C00106589 /* MLTableViewController.h */,
+				AAD288E81A13A68C00106589 /* MLTableViewController.m */,
+				AAD288EA1A13A68C00106589 /* MLCollectionViewController.h */,
+				AAD288EB1A13A68C00106589 /* MLCollectionViewController.m */,
+				AAD288ED1A13A68C00106589 /* MLNavigationController.h */,
+				AAD288EE1A13A68C00106589 /* MLNavigationController.m */,
+			);
+			name = Abstract;
+			sourceTree = "<group>";
+		};
+		AAD288F01A13A68C00106589 /* UITableView Cells */ = {
+			isa = PBXGroup;
+			children = (
+				AAD288F11A13A68C00106589 /* MLTableViewCell.h */,
+				AAD288F21A13A68C00106589 /* MLTableViewCell.m */,
+			);
+			name = "UITableView Cells";
+			sourceTree = "<group>";
+		};
+		AAD288F41A13A68C00106589 /* UICollectionView Cells */ = {
+			isa = PBXGroup;
+			children = (
+				AAD288F51A13A68C00106589 /* MLCollectionViewCell.h */,
+				AAD288F61A13A68C00106589 /* MLCollectionViewCell.m */,
+			);
+			name = "UICollectionView Cells";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AAD288C91A13A68B00106589 /* MLDataSource */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAD288FD1A13A68C00106589 /* Build configuration list for PBXNativeTarget "MLDataSource" */;
+			buildPhases = (
+				AAD288C61A13A68B00106589 /* Sources */,
+				AAD288C71A13A68B00106589 /* Frameworks */,
+				AAD288C81A13A68B00106589 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MLDataSource;
+			productName = MLDataSource;
+			productReference = AAD288CA1A13A68B00106589 /* MLDataSource.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AAD288C21A13A68B00106589 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = ML;
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Joachim Kret";
+				TargetAttributes = {
+					AAD288C91A13A68B00106589 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+				};
+			};
+			buildConfigurationList = AAD288C51A13A68B00106589 /* Build configuration list for PBXProject "MLDataSource" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = AAD288C11A13A68B00106589;
+			productRefGroup = AAD288CB1A13A68B00106589 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AAD288C91A13A68B00106589 /* MLDataSource */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AAD288C81A13A68B00106589 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAD288D61A13A68B00106589 /* InfoPlist.strings in Resources */,
+				AAD289071A13A73B00106589 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AAD288C61A13A68B00106589 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAD288E21A13A68C00106589 /* MLConstants.m in Sources */,
+				AAD288F71A13A68C00106589 /* MLCollectionViewCell.m in Sources */,
+				AAD288EC1A13A68C00106589 /* MLCollectionViewController.m in Sources */,
+				AAD289021A13A6AB00106589 /* MLDataSource.m in Sources */,
+				AAD288E61A13A68C00106589 /* MLViewController.m in Sources */,
+				AAD288E91A13A68C00106589 /* MLTableViewController.m in Sources */,
+				AAD288EF1A13A68C00106589 /* MLNavigationController.m in Sources */,
+				AAD288FA1A13A68C00106589 /* MLAppDelegate.m in Sources */,
+				AAD288F31A13A68C00106589 /* MLTableViewCell.m in Sources */,
+				AAD288D81A13A68C00106589 /* main.m in Sources */,
+				AAD289051A13A6BF00106589 /* MLPagedDataSource.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AAD288D41A13A68B00106589 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AAD288D51A13A68B00106589 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AAD288FB1A13A68C00106589 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AAD288FC1A13A68C00106589 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AAD288FE1A13A68C00106589 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MLDataSource/MLDataSource-Prefix.pch";
+				INFOPLIST_FILE = "MLDataSource/MLDataSource-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		AAD288FF1A13A68C00106589 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MLDataSource/MLDataSource-Prefix.pch";
+				INFOPLIST_FILE = "MLDataSource/MLDataSource-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AAD288C51A13A68B00106589 /* Build configuration list for PBXProject "MLDataSource" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAD288FB1A13A68C00106589 /* Debug */,
+				AAD288FC1A13A68C00106589 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAD288FD1A13A68C00106589 /* Build configuration list for PBXNativeTarget "MLDataSource" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAD288FE1A13A68C00106589 /* Debug */,
+				AAD288FF1A13A68C00106589 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AAD288C21A13A68B00106589 /* Project object */;
+}
