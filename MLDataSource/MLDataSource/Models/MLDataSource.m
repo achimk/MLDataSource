@@ -30,8 +30,10 @@
 }
 
 - (instancetype)initWithArray:(NSArray *)array {
-    // Don't call [super init], as NSProxy does not recognize -init.
-    _arrayOfData = (array) ? array : @[];
+    if (self = [super init]) {
+        _arrayOfData = (array) ? array : @[];
+    }
+    
     return self;
 }
 
@@ -89,28 +91,36 @@
     self.error = error;
 }
 
-#pragma mark Proxy
-
-+ (Class)class {
-    return [NSArray class];
+- (NSInteger)numberOfSections {
+    return 1;
 }
 
-+ (BOOL)respondsToSelector:(SEL)aSelector {
-    id proxy = [[[self class] alloc] init];
-    return [proxy respondsToSelector:aSelector];
+- (NSInteger)numberOfRowsInSection:(NSInteger)section {
+    return self.arrayOfData.count;
 }
 
-- (void)forwardInvocation:(NSInvocation *)invocation {
-    invocation.target = self.arrayOfData;
-    [invocation invoke];
-}
+//#pragma mark Proxy
 
-- (NSMethodSignature *)methodSignatureForSelector:(SEL)sel {
-    return [[self arrayOfData] methodSignatureForSelector:sel];
-}
+//+ (Class)class {
+//    return [NSArray class];
+//}
 
-- (NSString *)description {
-    return self.arrayOfData.description;
-}
+//+ (BOOL)respondsToSelector:(SEL)aSelector {
+//    id proxy = [[[self class] alloc] init];
+//    return [proxy respondsToSelector:aSelector];
+//}
+
+//- (void)forwardInvocation:(NSInvocation *)invocation {
+//    invocation.target = self.arrayOfData;
+//    [invocation invoke];
+//}
+//
+//- (NSMethodSignature *)methodSignatureForSelector:(SEL)sel {
+//    return [[self arrayOfData] methodSignatureForSelector:sel];
+//}
+//
+//- (NSString *)description {
+//    return self.arrayOfData.description;
+//}
 
 @end

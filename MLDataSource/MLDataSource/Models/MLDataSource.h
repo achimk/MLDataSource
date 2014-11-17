@@ -17,6 +17,8 @@ typedef void (^MLDataSourceRejecter)(NSError *);
 
 @required
 - (void)performFetch:(void (^)(MLDataSourceFulfiller, MLDataSourceRejecter))block;
+- (NSInteger)numberOfSections;
+- (NSInteger)numberOfRowsInSection:(NSInteger)section;
 
 @end
 
@@ -28,7 +30,7 @@ typedef void (^MLDataSourceRejecter)(NSError *);
 
 @end
 
-@interface MLDataSource : NSProxy <MLDataSourceProtocol> {
+@interface MLDataSource : NSObject <MLDataSourceProtocol> {
     NSError * _error;
     NSArray * _arrayOfData;
 }

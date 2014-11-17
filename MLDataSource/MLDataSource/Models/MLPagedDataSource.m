@@ -39,11 +39,12 @@
 }
 
 - (id)initWithArray:(NSArray *)array {
-    // Don't call [super init], as NSProxy does not recognize -init.
-    _defaultPage = 0;
-    _currentPage = _defaultPage;
-    _state = MLDataSourceStateNormal;
-    _arrayOfData = (array) ? array : @[];
+    if (self = [super initWithArray:array]) {
+        _defaultPage = 0;
+        _currentPage = _defaultPage;
+        _state = MLDataSourceStateNormal;
+    }
+    
     return self;
 }
 

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA4D27FC1A19E22300613776 /* MLPagedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA4D27FB1A19E22300613776 /* MLPagedTableViewController.m */; };
+		AA4D27FF1A19E2BA00613776 /* MLLoadingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AA4D27FE1A19E2BA00613776 /* MLLoadingTableViewCell.m */; };
 		AAD288CE1A13A68B00106589 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAD288CD1A13A68B00106589 /* Foundation.framework */; };
 		AAD288D01A13A68B00106589 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAD288CF1A13A68B00106589 /* UIKit.framework */; };
 		AAD288D61A13A68B00106589 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AAD288D41A13A68B00106589 /* InfoPlist.strings */; };
@@ -25,6 +27,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AA4D27FA1A19E22300613776 /* MLPagedTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLPagedTableViewController.h; sourceTree = "<group>"; };
+		AA4D27FB1A19E22300613776 /* MLPagedTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLPagedTableViewController.m; sourceTree = "<group>"; };
+		AA4D27FD1A19E2BA00613776 /* MLLoadingTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLLoadingTableViewCell.h; sourceTree = "<group>"; };
+		AA4D27FE1A19E2BA00613776 /* MLLoadingTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLLoadingTableViewCell.m; sourceTree = "<group>"; };
 		AAD288CA1A13A68B00106589 /* MLDataSource.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MLDataSource.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAD288CD1A13A68B00106589 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		AAD288CF1A13A68B00106589 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -163,6 +169,8 @@
 			isa = PBXGroup;
 			children = (
 				AAD288E31A13A68C00106589 /* Abstract */,
+				AA4D27FA1A19E22300613776 /* MLPagedTableViewController.h */,
+				AA4D27FB1A19E22300613776 /* MLPagedTableViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -187,6 +195,8 @@
 			children = (
 				AAD288F11A13A68C00106589 /* MLTableViewCell.h */,
 				AAD288F21A13A68C00106589 /* MLTableViewCell.m */,
+				AA4D27FD1A19E2BA00613776 /* MLLoadingTableViewCell.h */,
+				AA4D27FE1A19E2BA00613776 /* MLLoadingTableViewCell.m */,
 			);
 			name = "UITableView Cells";
 			sourceTree = "<group>";
@@ -277,7 +287,9 @@
 				AAD288E91A13A68C00106589 /* MLTableViewController.m in Sources */,
 				AAD288EF1A13A68C00106589 /* MLNavigationController.m in Sources */,
 				AAD288FA1A13A68C00106589 /* MLAppDelegate.m in Sources */,
+				AA4D27FC1A19E22300613776 /* MLPagedTableViewController.m in Sources */,
 				AAD288F31A13A68C00106589 /* MLTableViewCell.m in Sources */,
+				AA4D27FF1A19E2BA00613776 /* MLLoadingTableViewCell.m in Sources */,
 				AAD288D81A13A68C00106589 /* main.m in Sources */,
 				AAD289051A13A6BF00106589 /* MLPagedDataSource.m in Sources */,
 			);
@@ -410,6 +422,7 @@
 				AAD288FF1A13A68C00106589 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -8,6 +8,8 @@
 
 #import "MLAppDelegate.h"
 
+#import "MLPagedTableViewController.h"
+
 @implementation MLAppDelegate
 
 #pragma mark UIApplicationDelegate
@@ -15,7 +17,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    UIViewController * viewController = [[UIViewController alloc] init];
+    UIViewController * viewController = [[MLPagedTableViewController alloc] init];
     viewController.view.backgroundColor = [UIColor whiteColor];
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.rootViewController = viewController;
